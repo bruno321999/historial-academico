@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: #f5f5f5;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+section {
+    background: #fff;
+    border-radius: 8px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #34495e;
+    border-bottom: 2px solid #e74c3c;
+    padding-bottom: 5px;
+}
+
+.formulario input, .formulario select, .formulario button {
+    width: 100%;
+    max-width: 300px;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.formulario button {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background: #c0392b;
+}
+
+.historial p, .titulos p, .documentacion p {
+    padding: 5px;
+    margin: 3px 0;
+    border-radius: 5px;
+}
+
+.historial p.aprobada {
+    background: #d4edda;
+    color: #155724;
+}
+
+.historial p.desaprobada {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.titulos p {
+    background: #d1ecf1;
+    color: #0c5460;
+}
+
+.documentacion p {
+    background: #fff3cd;
+    color: #856404;
+}
+
+#seleccion-rol {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#seleccion-rol button {
+    background: #3498db;
+    color: white;
+    border: none;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#seleccion-rol button:hover {
+    background: #2980b9;
+}
+
+.historial hr {
+    margin-top: 10px;
+    border: 0;
+    height: 1px;
+    background: #ccc;
+}
+
+.historial p strong {
+    color: #2c3e50;
+}
+
+.btn-ver, .btn-editar, .btn-eliminar {
+    border: none;
+    padding: 8px 15px;
+    margin: 5px 5px 0 0;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-ver {
+    background: #3498db;
+}
+
+.btn-ver:hover {
+    background: #2980b9;
+}
+
+.btn-editar {
+    background: #f39c12;
+}
+
+.btn-editar:hover {
+    background: #e67e22;
+}
+
+.btn-eliminar {
+    background: #e74c3c;
+}
+
+.btn-eliminar:hover {
+    background: #c0392b;
+}
+
+.estudiante button {
+    display: inline-block;
+}
+
+.selector-perfil {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 2px solid #3498db;
+    background-color: #f0f8ff;
+    font-size: 1rem;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.selector-perfil:hover {
+    border-color: #2980b9;
+}

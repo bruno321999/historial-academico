@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial Académico</title>
+    <link rel="stylesheet" href="pagina.css">
+</head>
+<body>
+
+<h1>Historial Académico</h1>
+
+<section id="seleccion-rol">
+    <h2>Seleccione su rol</h2>
+    <button id="btn-profesor">Soy Profesor</button>
+    <button id="btn-estudiante">Soy Estudiante</button>
+</section>
+
+<div id="vista-profesor" style="display: none;">
+    
+    <section>
+        <h2>Estudiante Activo para Gestión</h2>
+        <div id="estudiante-activo-profesor" style="padding: 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #f9f9f9;">
+            <p>Ningún estudiante seleccionado.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Profesor: Agregar Nota</h2>
+        <form id="formulario-nota" class="formulario">
+            <input type="text" id="nombre-asignatura" placeholder="Nombre asignatura" required>
+            <input type="number" id="nota" placeholder="Nota" min="0" max="10" required>
+            <select id="estado">
+                <option value="true">Aprobada</option>
+                <option value="false">Desaprobada</option>
+            </select>
+            <button type="submit">Agregar Nota</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Profesor: Agregar / Editar Título</h2>
+        <form id="formulario-titulo" class="formulario">
+            <input type="text" id="nombre-titulo" placeholder="Nombre del título" required>
+            <input type="date" id="fecha-titulo" required>
+            <input type="text" id="mencion-titulo" placeholder="Mención especial (opcional)">
+            <button type="submit">Agregar Título</button>
+        </form>
+    </section>
+
+    <section id="gestion-estudiantes">
+        <h2>Profesor: Gestión de Estudiantes</h2>
+        <form id="formulario-estudiante" class="formulario">
+            <input type="text" id="nombre-estudiante" placeholder="Nombre completo" required>
+            <input type="text" id="dni-estudiante" placeholder="DNI" required>
+            <input type="date" id="fecha-estudiante" required>
+            <input type="text" id="nacionalidad-estudiante" placeholder="Nacionalidad" required>
+            <button type="submit">Agregar Estudiante</button>
+        </form>
+
+        <h3>Lista de Estudiantes</h3>
+        <div id="lista-estudiantes"></div>
+    </section>
+</div>
+
+<div id="vista-estudiante" style="display: none;">
+    
+    <section id="selector-estudiante-seccion">
+        <h2>Seleccionar Perfil</h2>
+        <select id="select-estudiante" class="selector-perfil">
+            <option value="">--- Seleccione su DNI ---</option>
+        </select>
+    </section>
+
+    <section id="seccion-lista-estudiantes-vista-estudiante">
+        <h2>Estudiantes Registrados (Compañeros)</h2>
+        <div id="lista-estudiantes-vista-estudiante"></div>
+    </section>
+
+    <section>
+        <h2>Historial Personal</h2>
+        <div id="historial-estudiante" class="historial"></div>
+    </section>
+
+    <section>
+        <h2>Documentación Personal</h2>
+        <div id="documentacion-estudiante" class="documentacion"></div>
+    </section>
+
+    <section>
+        <h2>Títulos Obtenidos</h2>
+        <div id="titulos-estudiante" class="titulos"></div>
+    </section>
+</div>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
